@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "grading_guru",
+    "title": "Grading Guru",
+    "description": "Compare and evaluate the quality of written texts based on criteria.",
+    "category": "education",
+    "categoryLabel": "Education",
+    "categoryIcon": "🎓",
+    "source": "https://platform.claude.com/docs/en/prompt-library/grading-guru",
+    "file": "education/grading_guru.py",
+    "hasSystem": false,
+    "system": "",
+    "userExample": "Evaluate the following two texts based on the given criteria:\n\nText 1: The sun was setting behind the mountains, casting a warm golden glow across the valley.\n\nText 2: The sunset was pretty. It made me happy.\n\nCriteria:\n1. Descriptive language and imagery\n2. Sentence structure and variety\n3. Emotional impact and engagement\n4. Grammar and punctuation",
+    "inputSchema": {
+      "label": "Texts and evaluation criteria",
+      "type": "textarea",
+      "placeholder": "Provide the texts to compare and your evaluation criteria..."
+    }
+  },
+  {
+    "slug": "lesson_planner",
+    "title": "Lesson Planner",
+    "description": "Craft in-depth lesson plans on any subject.",
+    "category": "education",
+    "categoryLabel": "Education",
+    "categoryIcon": "🎓",
+    "source": "https://platform.claude.com/docs/en/prompt-library/lesson-planner",
+    "file": "education/lesson_planner.py",
+    "hasSystem": true,
+    "system": "Your task is to create a comprehensive, engaging, and well-structured lesson plan on the given subject. The lesson plan should be designed for a 60-minute class session and should cater to a specific grade level or age group. Begin by stating the lesson objectives, which should be clear, measurable, and aligned with relevant educational standards. Next, provide a detailed outline of the lesson, breaking it down into an introduction, main activities, and a conclusion. For each section, describe the teaching methods, learning activities, and resources you will use to effectively convey the content and engage the students. Finally, describe the assessment methods you will employ to evaluate students' understanding and mastery of the lesson objectives.",
+    "userExample": "Subject: Introduction to Photosynthesis\nGrade Level: 7th Grade (Ages 12-13)",
+    "inputSchema": {
+      "label": "Subject and grade level",
+      "type": "textarea",
+      "placeholder": "e.g., Subject: Fractions\\nGrade Level: 4th Grade"
+    }
+  },
+  {
+    "slug": "second_grade_simplifier",
+    "title": "Second-grade Simplifier",
+    "description": "Make complex text easy for young learners to understand.",
+    "category": "education",
+    "categoryLabel": "Education",
+    "categoryIcon": "🎓",
+    "source": "https://platform.claude.com/docs/en/prompt-library/second-grade-simplifier",
+    "file": "education/second_grade_simplifier.py",
+    "hasSystem": true,
+    "system": "Your task is to take the text provided and rewrite it in a way that is easy for young learners in grades 3-5 to read and understand. Simplify advanced vocabulary, break down long sentences, explain difficult concepts in plain language, and present the information in a clear, engaging way. The short rewritten text should convey the core ideas of the original text in an age-appropriate manner.",
+    "userExample": "The mitochondria, often referred to as the powerhouses of the cell, are essential organelles that play a crucial role in the production of adenosine triphosphate (ATP) through the process of cellular respiration. ATP is the primary energy currency of the cell, enabling various cellular functions and biochemical reactions to occur.",
+    "inputSchema": {
+      "label": "Complex text to simplify",
+      "type": "textarea",
+      "placeholder": "Paste the complex text here..."
+    }
+  },
+  {
+    "slug": "trivia_generator",
+    "title": "Trivia Generator",
+    "description": "Generate trivia questions on a wide range of topics with hints.",
+    "category": "education",
+    "categoryLabel": "Education",
+    "categoryIcon": "🎓",
+    "source": "https://platform.claude.com/docs/en/prompt-library/trivia-generator",
+    "file": "education/trivia_generator.py",
+    "hasSystem": false,
+    "system": "",
+    "userExample": "Generate trivia questions on various topics and provide hints to help users arrive at the correct answer. Select from a diverse set of categories and create questions that test the user's knowledge or reasoning skills.",
+    "inputSchema": {
+      "label": "Trivia topic or category",
+      "type": "text",
+      "placeholder": "e.g., World History, Science, Pop Culture..."
+    }
+  }
+]

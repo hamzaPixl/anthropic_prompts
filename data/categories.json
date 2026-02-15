@@ -1,0 +1,62 @@
+[
+  {
+    "key": "coding",
+    "label": "Coding",
+    "icon": "⌨️",
+    "file": "coding"
+  },
+  {
+    "key": "writing",
+    "label": "Writing",
+    "icon": "✍️",
+    "file": "writing"
+  },
+  {
+    "key": "creativity",
+    "label": "Creativity",
+    "icon": "🎨",
+    "file": "creativity"
+  },
+  {
+    "key": "data_and_analysis",
+    "label": "Data & Analysis",
+    "icon": "📊",
+    "file": "data-and-analysis"
+  },
+  {
+    "key": "business",
+    "label": "Business",
+    "icon": "💼",
+    "file": "business"
+  },
+  {
+    "key": "education",
+    "label": "Education",
+    "icon": "🎓",
+    "file": "education"
+  },
+  {
+    "key": "philosophy_and_ethics",
+    "label": "Philosophy & Ethics",
+    "icon": "🧠",
+    "file": "philosophy-and-ethics"
+  },
+  {
+    "key": "lifestyle_and_wellness",
+    "label": "Lifestyle & Wellness",
+    "icon": "🌿",
+    "file": "lifestyle-and-wellness"
+  },
+  {
+    "key": "language",
+    "label": "Language",
+    "icon": "🌐",
+    "file": "language"
+  },
+  {
+    "key": "safety",
+    "label": "Safety",
+    "icon": "🛡️",
+    "file": "safety"
+  }
+]

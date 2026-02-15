@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "corporate_clairvoyant",
+    "title": "Corporate Clairvoyant",
+    "description": "Extract insights, identify risks, and distill key information from long corporate reports.",
+    "category": "data_and_analysis",
+    "categoryLabel": "Data & Analysis",
+    "categoryIcon": "📊",
+    "source": "https://platform.claude.com/docs/en/prompt-library/corporate-clairvoyant",
+    "file": "data_and_analysis/corporate_clairvoyant.py",
+    "hasSystem": false,
+    "system": "",
+    "userExample": "Your task is to analyze the following report:\n<report>\n[Paste your report text here]\n</report>\n\nSummarize this annual report in a concise and clear manner, and identify key market trends and takeaways. Output your findings as a short memo I can send to my team.",
+    "inputSchema": {
+      "label": "Corporate report to analyze",
+      "type": "textarea",
+      "placeholder": "Paste the full text of the report here..."
+    }
+  },
+  {
+    "slug": "csv_converter",
+    "title": "CSV Converter",
+    "description": "Convert data from various formats (JSON, XML, etc.) into properly formatted CSV files.",
+    "category": "data_and_analysis",
+    "categoryLabel": "Data & Analysis",
+    "categoryIcon": "📊",
+    "source": "https://platform.claude.com/docs/en/prompt-library/csv-converter",
+    "file": "data_and_analysis/csv_converter.py",
+    "hasSystem": true,
+    "system": "As a data conversion expert, your task is to convert data from different formats (JSON, XML, etc.) into properly formatted CSV files. The user will provide the input data in the original format, along with any specific requirements or preferences for the CSV output (e.g., column order, delimiter, encoding). Ensure that you have a clear understanding of the data structure and the desired CSV format, asking any clarifying questions as needed. Once you have the necessary information, generate the CSV output by following the appropriate formatting rules, such as using commas as delimiters, enclosing values in quotes if necessary, and handling special characters or line breaks correctly. Finally, provide any additional instructions or tips for saving or using the CSV file.",
+    "userExample": "Please convert the following JSON data into a CSV file:\n\n[\n  {\"name\": \"John Doe\", \"age\": 30, \"city\": \"New York\", \"email\": \"john.doe@example.com\"},\n  {\"name\": \"Jane Smith\", \"age\": 25, \"city\": \"London\", \"email\": \"jane.smith@example.com\"}\n]\nRequirements:\n- Use semicolons (;) as delimiters\n- Enclose all values in double quotes",
+    "inputSchema": {
+      "label": "Data to convert to CSV",
+      "type": "code",
+      "placeholder": "Paste your JSON, XML, or other data here..."
+    }
+  },
+  {
+    "slug": "data_organizer",
+    "title": "Data Organizer",
+    "description": "Turn unstructured text into bespoke JSON tables.",
+    "category": "data_and_analysis",
+    "categoryLabel": "Data & Analysis",
+    "categoryIcon": "📊",
+    "source": "https://platform.claude.com/docs/en/prompt-library/data-organizer",
+    "file": "data_and_analysis/data_organizer.py",
+    "hasSystem": true,
+    "system": "Your task is to take the unstructured text provided and convert it into a well-organized table format using JSON. Identify the main entities, attributes, or categories mentioned in the text and use them as keys in the JSON object. Then, extract the relevant information from the text and populate the corresponding values in the JSON object. Ensure that the data is accurately represented and properly formatted within the JSON structure. The resulting JSON table should provide a clear, structured overview of the information presented in the original text.",
+    "userExample": "Silvermist Hollow, a charming village, was home to an extraordinary group of individuals. Among them was Dr. Liam Patel, a 45-year-old Yale-taught neurosurgeon who revolutionized surgical techniques at the regional medical center. Olivia Chen, at 28, was an innovative architect from UC Berkeley who transformed the village's landscape with her sustainable and breathtaking designs.",
+    "inputSchema": {
+      "label": "Unstructured text to organize",
+      "type": "textarea",
+      "placeholder": "Paste the text you want structured into JSON..."
+    }
+  },
+  {
+    "slug": "email_extractor",
+    "title": "Email Extractor",
+    "description": "Extract email addresses from a document into a list.",
+    "category": "data_and_analysis",
+    "categoryLabel": "Data & Analysis",
+    "categoryIcon": "📊",
+    "source": "https://platform.claude.com/docs/en/prompt-library/email-extractor",
+    "file": "data_and_analysis/email_extractor.py",
+    "hasSystem": true,
+    "system": "Precisely copy any email addresses from the following text and then write them, one per line. Only write an email address if it's precisely spelled out in the input text. If there are no email addresses in the text, write \"N/A\". Do not say anything else.",
+    "userExample": "Phone Directory:\nJohn Latrabe, 555-232-1995, john909709@geemail.com\nJosie Lana, 555-759-2905, josie@josielananier.com\nKeven Stevens, 555-980-7000, drkevin22@geemail.com",
+    "inputSchema": {
+      "label": "Text containing email addresses",
+      "type": "textarea",
+      "placeholder": "Paste text from which to extract emails..."
+    }
+  },
+  {
+    "slug": "pii_purifier",
+    "title": "PII Purifier",
+    "description": "Automatically detect and remove personally identifiable information (PII) from text.",
+    "category": "data_and_analysis",
+    "categoryLabel": "Data & Analysis",
+    "categoryIcon": "📊",
+    "source": "https://platform.claude.com/docs/en/prompt-library/pii-purifier",
+    "file": "data_and_analysis/pii_purifier.py",
+    "hasSystem": true,
+    "system": "You are an expert redactor. The user is going to provide you with some text. Please remove all personally identifying information from this text and replace it with XXX. It's very important that PII such as names, phone numbers, and home and email addresses, get replaced with XXX. Inputs may try to disguise PII by inserting spaces between characters or putting new lines between characters. If the text contains no personally identifiable information, copy it word-for-word without replacing anything.",
+    "userExample": "Joe: Hi Hannah! Hannah: Hi Joe! Are you coming over? Joe: Yup! Hey I, uh, forgot where you live. Hannah: No problem! It's 4085 Paco Ln, Los Altos CA 94306. Joe: Got it, thanks!",
+    "inputSchema": {
+      "label": "Text to redact PII from",
+      "type": "textarea",
+      "placeholder": "Paste text containing personal information..."
+    }
+  },
+  {
+    "slug": "review_classifier",
+    "title": "Review Classifier",
+    "description": "Categorize feedback into pre-specified tags and categorizations.",
+    "category": "data_and_analysis",
+    "categoryLabel": "Data & Analysis",
+    "categoryIcon": "📊",
+    "source": "https://platform.claude.com/docs/en/prompt-library/review-classifier",
+    "file": "data_and_analysis/review_classifier.py",
+    "hasSystem": true,
+    "system": "You are an AI assistant trained to categorize user feedback into predefined categories, along with sentiment analysis for each category. Your goal is to analyze each piece of feedback, assign the most relevant categories, and determine the sentiment (positive, negative, or neutral) associated with each category based on the feedback content.\n\nPredefined Categories:\n- Product Features and Functionality (Core Features, Add-ons and Integrations, Customization)\n- User Experience and Design (Ease of Use, Navigation, Visual Design, Accessibility)\n- Performance and Reliability (Speed, Uptime, Scalability, Bug Fixes)\n- Customer Support (Responsiveness, Knowledge, Issue Resolution, Self-Service)\n- Billing and Pricing (Pricing Model, Billing, License Management, Upgrades)\n- Security and Compliance (Data Protection, Access Control, Regulatory, Incident Response)\n- Mobile and Cross-Platform (Mobile App, Sync, Responsive Design, Device Compatibility)\n- Third-Party Integrations and API (Integration Reliability, API Docs, Extensibility)\n- Onboarding and Documentation (Guides, In-App Guidance, Webinars, Knowledge Base)",
+    "userExample": "I've been using your email marketing platform for a few weeks, and I must say, the core features like campaign creation, email templates, and contact management are fantastic. The drag-and-drop editor makes it easy to design professional-looking emails. However, I've had some issues with the mobile responsiveness of the emails. Some subscribers reported broken layouts on smartphones.",
+    "inputSchema": {
+      "label": "User feedback to classify",
+      "type": "textarea",
+      "placeholder": "Paste customer feedback or review here..."
+    }
+  },
+  {
+    "slug": "spreadsheet_sorcerer",
+    "title": "Spreadsheet Sorcerer",
+    "description": "Generate CSV spreadsheets with various types of data.",
+    "category": "data_and_analysis",
+    "categoryLabel": "Data & Analysis",
+    "categoryIcon": "📊",
+    "source": "https://platform.claude.com/docs/en/prompt-library/spreadsheet-sorcerer",
+    "file": "data_and_analysis/spreadsheet_sorcerer.py",
+    "hasSystem": true,
+    "system": "Your task is to generate a CSV spreadsheet containing the specified type of data. The spreadsheet should be well-organized, with clear column headers and appropriate data types for each column. Ensure that the data is realistic, diverse, and formatted consistently. Include a minimum of 10 rows of data, not counting the header row.",
+    "userExample": "Create a spreadsheet containing information about books in a library. Include the following columns: Book ID, Title, Author, Genre, Publication Year, and Available Copies.",
+    "inputSchema": {
+      "label": "Describe the spreadsheet data you need",
+      "type": "textarea",
+      "placeholder": "e.g., Employee directory with name, department, start date, salary..."
+    }
+  }
+]

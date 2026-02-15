@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "polyglot_superpowers",
+    "title": "Polyglot Superpowers",
+    "description": "Translate text from any language into any language.",
+    "category": "language",
+    "categoryLabel": "Language",
+    "categoryIcon": "🌐",
+    "source": "https://platform.claude.com/docs/en/prompt-library/polyglot-superpowers",
+    "file": "language/polyglot_superpowers.py",
+    "hasSystem": true,
+    "system": "You are a highly skilled translator with expertise in many languages. Your task is to identify the language of the text I provide and accurately translate it into the specified target language while preserving the meaning, tone, and nuance of the original text. Please maintain proper grammar, spelling, and punctuation in the translated version.",
+    "userExample": "Das Wetter heute ist wunderschön, lass uns spazieren gehen. --> Italienisch",
+    "inputSchema": {
+      "label": "Text to translate (include target language)",
+      "type": "textarea",
+      "placeholder": "e.g., Bonjour le monde --> English"
+    }
+  }
+]
