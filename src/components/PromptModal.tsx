@@ -76,10 +76,15 @@ export default function PromptModal({ prompt, onClose }: { prompt: Prompt; onClo
           message: userInput,
         }),
       });
-      const data: TestResponse = await res.json();
-      setResult(data);
-    } catch {
-      setResult({ error: "Network error" });
+      const text = await res.text();
+      try {
+        const data: TestResponse = JSON.parse(text);
+        setResult(data);
+      } catch {
+        setResult({ error: `Unexpected response (${res.status}): ${text.slice(0, 200)}` });
+      }
+    } catch (err) {
+      setResult({ error: err instanceof Error ? err.message : "Network error — is the dev server running?" });
     } finally {
       setTesting(false);
     }
